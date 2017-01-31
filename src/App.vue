@@ -2,7 +2,7 @@
   <div id="app">
     <div class="container">
       <h2> <b> LCD Custom Character Generator </b></h2> <br>
-      <h3>Support character lcd and create code for Arduino. </h3>
+      <h3>Generator code for Arduino. [tester nodeMCU ESP8266]</h3>
     </div>
 
     <div class="container">
