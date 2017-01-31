@@ -320,18 +320,231 @@ const mutations = {
         state.textB8 = text.join('')
       }
     }
+  },
+  clear: (state) => {
+    state.textB1 = '00000'
+    state.textB2 = '00000'
+    state.textB3 = '00000'
+    state.textB4 = '00000'
+    state.textB5 = '00000'
+    state.textB6 = '00000'
+    state.textB7 = '00000'
+    state.textB8 = '00000'
+    state.view = [
+      {
+        pin: '1,0',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '1,1',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '1,2',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '1,3',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '1,4',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '2,0',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '2,1',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '2,2',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '2,3',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '2,4',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '3,0',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '3,1',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '3,2',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '3,3',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '3,4',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '4,0',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '4,1',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '4,2',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '4,3',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '4,4',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '5,0',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '5,1',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '5,2',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '5,3',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '5,4',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '6,0',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '6,1',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '6,2',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '6,3',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '6,4',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '7,0',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '7,1',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '7,2',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '7,3',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '7,4',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '8,0',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '8,1',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '8,2',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '8,3',
+        value: 0,
+        toggle: false
+      },
+      {
+        pin: '8,4',
+        value: 0,
+        toggle: false
+      }
+    ]
   }
 }
 
 /* getters */
-const getters = {
-  view: state => state.view
-}
+const getters = {}
 
 /* actions */
 const actions = {
   toggle: (state, index) => {
     store.commit('toggle', index)
+  },
+  clear: (state) => {
+    store.commit('clear')
   }
 }
 
