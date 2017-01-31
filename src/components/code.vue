@@ -1,6 +1,6 @@
 <template lang="html">
   <div>
-    <codemirror v-model="store.state.code" :options="store.state.editorOption"></codemirror>
+    <codemirror v-model="codefinal" :options="store.state.editorOption"></codemirror>
   </div>
 </template>
 
@@ -14,7 +14,45 @@ export default {
   },
   data () {
     return {
-      store
+      store,
+      code: '',
+      codeTop: `#include <LiquidCrystal.h>
+LiquidCrystal lcd(12, 14, 2, 0, 4, 5);
+
+byte customChar[] = {`,
+      codeFooter: `void setup() {
+  lcd.begin(16, 2);
+  lcd.createChar(0, customChar);
+  lcd.home();
+  lcd.write(0);
+}
+
+void loop() { }`
+    }
+  },
+  mounted () {
+    this.code = this.codeTop + '\n  B' + store.state.textB1 + ', ' +
+    '\n  B' + store.state.textB2 + ', ' +
+    '\n  B' + store.state.textB3 + ', ' +
+    '\n  B' + store.state.textB4 + ', ' +
+    '\n  B' + store.state.textB5 + ', ' +
+    '\n  B' + store.state.textB6 + ', ' +
+    '\n  B' + store.state.textB7 + ', ' +
+    '\n  B' + store.state.textB8 + ', ' +
+    '\n' + this.codeFooter
+  },
+  computed: {
+    codefinal () {
+      this.code = this.codeTop + '\n  B' + store.state.textB1 + ', ' +
+      '\n  B' + store.state.textB2 + ', ' +
+      '\n  B' + store.state.textB3 + ', ' +
+      '\n  B' + store.state.textB4 + ', ' +
+      '\n  B' + store.state.textB5 + ', ' +
+      '\n  B' + store.state.textB6 + ', ' +
+      '\n  B' + store.state.textB7 + ', ' +
+      '\n  B' + store.state.textB8 + ', ' +
+      '\n' + this.codeFooter
+      return this.code
     }
   }
 }

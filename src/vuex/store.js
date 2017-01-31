@@ -3,14 +3,6 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 Vue.use(Vuex)
 
-var textB1 = '00000'
-var textB2 = '00000'
-var textB3 = '00000'
-var textB4 = '00000'
-var textB5 = '00000'
-var textB6 = '00000'
-var textB7 = '00000'
-var textB8 = '00000'
 const state = {
   view: [
     {
@@ -227,38 +219,14 @@ const state = {
     styleSelectedText: true,
     highlightSelectionMatches: { showToken: /\w/, annotateScrollbar: true }
   },
-  code: `#include <LiquidCrystal.h>
-LiquidCrystal lcd(12, 14, 2, 0, 4, 5);
-
-byte customChar[] = {
-  B` + textB1 + `,
-  B` + textB2 + `,
-  B` + textB3 + `,
-  B` + textB4 + `,
-  B` + textB5 + `,
-  B` + textB6 + `,
-  B` + textB7 + `,
-  B` + textB8 + `
-};
-
-const int pin = 0;
-
-void setup() {
-  lcd.begin(16, 2);
-  lcd.createChar(0, customChar);
-  lcd.home();
-  lcd.write(pin);
-}
-
-void loop() { }`
-  // textB1: '00000',
-  // textB2: '00000',
-  // textB3: '00000',
-  // textB4: '00000',
-  // textB5: '00000',
-  // textB6: '00000',
-  // textB7: '00000',
-  // textB8: '00000'
+  textB1: '00000',
+  textB2: '00000',
+  textB3: '00000',
+  textB4: '00000',
+  textB5: '00000',
+  textB6: '00000',
+  textB7: '00000',
+  textB8: '00000'
 }
 
   /* mutations */
@@ -268,22 +236,89 @@ const mutations = {
     if (state.view[location].toggle === true) {
       state.view[location].toggle = false
       state.view[location].value = 0
-      // if (state.view[location].pin.charAt(0) === '1') {
-      //   let text = textB1.split('')
-      //   text[parseInt(state.view[location].pin.charAt(2))] = state.view[location].value
-      //   textB1 = text.join('')
-      //   console.log(textB1)
-      // }
+      if (state.view[location].pin.charAt(0) === '1') {
+        let text = state.textB1.split('')
+        text[parseInt(state.view[location].pin.charAt(2))] = state.view[location].value
+        state.textB1 = text.join('')
+      }
+      if (state.view[location].pin.charAt(0) === '2') {
+        let text = state.textB2.split('')
+        text[parseInt(state.view[location].pin.charAt(2))] = state.view[location].value
+        state.textB2 = text.join('')
+      }
+      if (state.view[location].pin.charAt(0) === '3') {
+        let text = state.textB3.split('')
+        text[parseInt(state.view[location].pin.charAt(2))] = state.view[location].value
+        state.textB3 = text.join('')
+      }
+      if (state.view[location].pin.charAt(0) === '4') {
+        let text = state.textB4.split('')
+        text[parseInt(state.view[location].pin.charAt(2))] = state.view[location].value
+        state.textB4 = text.join('')
+      }
+      if (state.view[location].pin.charAt(0) === '5') {
+        let text = state.textB5.split('')
+        text[parseInt(state.view[location].pin.charAt(2))] = state.view[location].value
+        state.textB5 = text.join('')
+      }
+      if (state.view[location].pin.charAt(0) === '6') {
+        let text = state.textB6.split('')
+        text[parseInt(state.view[location].pin.charAt(2))] = state.view[location].value
+        state.textB6 = text.join('')
+      }
+      if (state.view[location].pin.charAt(0) === '7') {
+        let text = state.textB7.split('')
+        text[parseInt(state.view[location].pin.charAt(2))] = state.view[location].value
+        state.textB7 = text.join('')
+      }
+      if (state.view[location].pin.charAt(0) === '8') {
+        let text = state.textB8.split('')
+        text[parseInt(state.view[location].pin.charAt(2))] = state.view[location].value
+        state.textB8 = text.join('')
+      }
     } else if (state.view[location].toggle === false) {
       state.view[location].toggle = true
       state.view[location].value = 1
-      // if (state.view[location].pin.charAt(0) === '1') {
-      //   let text = textB1.split('')
-      //   text[parseInt(state.view[location].pin.charAt(2))] = state.view[location].value
-      //   textB1 = text.join('')
-      //   console.log(textB1)
-      //   console.log(state.code)
-      // }
+      if (state.view[location].pin.charAt(0) === '1') {
+        let text = state.textB1.split('')
+        text[parseInt(state.view[location].pin.charAt(2))] = state.view[location].value
+        state.textB1 = text.join('')
+      }
+      if (state.view[location].pin.charAt(0) === '2') {
+        let text = state.textB2.split('')
+        text[parseInt(state.view[location].pin.charAt(2))] = state.view[location].value
+        state.textB2 = text.join('')
+      }
+      if (state.view[location].pin.charAt(0) === '3') {
+        let text = state.textB3.split('')
+        text[parseInt(state.view[location].pin.charAt(2))] = state.view[location].value
+        state.textB3 = text.join('')
+      }
+      if (state.view[location].pin.charAt(0) === '4') {
+        let text = state.textB4.split('')
+        text[parseInt(state.view[location].pin.charAt(2))] = state.view[location].value
+        state.textB4 = text.join('')
+      }
+      if (state.view[location].pin.charAt(0) === '5') {
+        let text = state.textB5.split('')
+        text[parseInt(state.view[location].pin.charAt(2))] = state.view[location].value
+        state.textB5 = text.join('')
+      }
+      if (state.view[location].pin.charAt(0) === '6') {
+        let text = state.textB6.split('')
+        text[parseInt(state.view[location].pin.charAt(2))] = state.view[location].value
+        state.textB6 = text.join('')
+      }
+      if (state.view[location].pin.charAt(0) === '7') {
+        let text = state.textB7.split('')
+        text[parseInt(state.view[location].pin.charAt(2))] = state.view[location].value
+        state.textB7 = text.join('')
+      }
+      if (state.view[location].pin.charAt(0) === '8') {
+        let text = state.textB8.split('')
+        text[parseInt(state.view[location].pin.charAt(2))] = state.view[location].value
+        state.textB8 = text.join('')
+      }
     }
   }
 }
