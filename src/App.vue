@@ -26,8 +26,8 @@
         Built with <a href="https://github.com/vuejs/vue" target="_blank" class="footer-link-description">Vuejs</a>
         <img src="../static/Vuejs.png" class="footer-logo" alt="Vue Logo">
         And
-        <a href="https://github.com/surmon-china/vue-codemirror" target="_blank" class="footer-link-description">Vuejs</a>
-        <img src="../static/code.png" style="width: 31.99px; height: 31.99px;"class="footer-logo" alt="Vue Logo">
+        <a href="https://github.com/surmon-china/vue-codemirror" target="_blank" class="footer-link-description">vue-codemirror</a>
+        <img src="../static/code.png" style="width: 31.99px; height: 31.99px;"class="footer-logo" alt="vue-codemirror Logo">
        </div>
      </div>
 </template>

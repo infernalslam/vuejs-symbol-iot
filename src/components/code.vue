@@ -18,6 +18,7 @@ export default {
       code: '',
       codeTop: `#include <LiquidCrystal.h>
 LiquidCrystal lcd(12, 14, 2, 0, 4, 5);
+const int pin = 0;
 
 byte customChar[] = {`,
       codeFooter: `void setup() {
@@ -27,7 +28,7 @@ byte customChar[] = {`,
   lcd.write(0);
 }
 
-void loop() { }`
+void loop() {}`
     }
   },
   mounted () {
