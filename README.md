@@ -1,6 +1,8 @@
 # iot-symbol
 
-> A Vue.js project
+> A Vue.js project Live Demo : https://character-generator-15e48.firebaseapp.com/
+
+![Logo](./sc.png)
 
 ## Build Setup
 
