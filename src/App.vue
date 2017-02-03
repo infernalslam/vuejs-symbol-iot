@@ -14,20 +14,22 @@
         <div class="col-xs-8"><code-view></code-view></div>
       </div>
 
-      <div class="footer">
-        <div class="star"> <!-- Place this tag where you want the button to render. -->
-          <!-- Place this tag where you want the button to render. -->
-          <a class="github-button" href="https://github.com/infernalslam" data-style="mega" data-count-href="/infernalslam/followers" data-count-api="/users/infernalslam#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @infernalslam on GitHub">Follow @infernalslam</a>
-          <a class="github-button" href="https://github.com/infernalslam/vuejs-symbol-iot" data-style="mega" aria-label="Star infernalslam/vuejs-symbol-iot on GitHub">Star</a>
-          <!-- Place this tag where you want the button to render. -->
-          <a class="github-button" href="https://github.com/infernalslam/vuejs-symbol-iot/issues" data-style="mega" data-count-api="/repos/infernalslam/vuejs-symbol-iot#open_issues_count" data-count-aria-label="# issues on GitHub" aria-label="Issue infernalslam/vuejs-symbol-iot on GitHub">Issue</a>
-        </div>
-        <div class="footer-description2">
-        Built with <a href="https://github.com/vuejs/vue" target="_blank" class="footer-link-description">Vuejs</a>
-        <img src="../static/Vuejs.png" class="footer-logo" alt="Vue Logo">
-        And
-        <a href="https://github.com/surmon-china/vue-codemirror" target="_blank" class="footer-link-description">vue-codemirror</a>
-        <img src="../static/code.png" style="width: 31.99px; height: 31.99px;"class="footer-logo" alt="vue-codemirror Logo">
+      <div class="container">
+        <div class="footer">
+          <div class="star"> <!-- Place this tag where you want the button to render. -->
+            <!-- Place this tag where you want the button to render. -->
+            <a class="github-button" href="https://github.com/infernalslam" data-style="mega" data-count-href="/infernalslam/followers" data-count-api="/users/infernalslam#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @infernalslam on GitHub">Follow @infernalslam</a>
+            <a class="github-button" href="https://github.com/infernalslam/vuejs-symbol-iot" data-style="mega" aria-label="Star infernalslam/vuejs-symbol-iot on GitHub">Star</a>
+            <!-- Place this tag where you want the button to render. -->
+            <a class="github-button" href="https://github.com/infernalslam/vuejs-symbol-iot/issues" data-style="mega" data-count-api="/repos/infernalslam/vuejs-symbol-iot#open_issues_count" data-count-aria-label="# issues on GitHub" aria-label="Issue infernalslam/vuejs-symbol-iot on GitHub">Issue</a>
+          </div>
+          <div class="footer-description2">
+          Built with <a href="https://github.com/vuejs/vue" target="_blank" class="footer-link-description">Vuejs</a>
+          <img src="../static/Vuejs.png" class="footer-logo" alt="Vue Logo">
+          And
+          <a href="https://github.com/surmon-china/vue-codemirror" target="_blank" class="footer-link-description">vue-codemirror</a>
+          <img src="../static/code.png" style="width: 31.99px; height: 31.99px;"class="footer-logo" alt="vue-codemirror Logo">
+         </div>
        </div>
      </div>
 </template>

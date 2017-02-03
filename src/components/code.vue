@@ -25,7 +25,7 @@ byte customChar[] = {`,
   lcd.begin(16, 2);
   lcd.createChar(0, customChar);
   lcd.home();
-  lcd.write(0);
+  lcd.write(pin);
 }
 
 void loop() {}`
@@ -39,7 +39,7 @@ void loop() {}`
     '\n  B' + store.state.textB5 + ', ' +
     '\n  B' + store.state.textB6 + ', ' +
     '\n  B' + store.state.textB7 + ', ' +
-    '\n  B' + store.state.textB8 + ', ' +
+    '\n  B' + store.state.textB8 + '\n} ' +
     '\n' + this.codeFooter
   },
   computed: {
@@ -51,7 +51,7 @@ void loop() {}`
       '\n  B' + store.state.textB5 + ', ' +
       '\n  B' + store.state.textB6 + ', ' +
       '\n  B' + store.state.textB7 + ', ' +
-      '\n  B' + store.state.textB8 + ', ' +
+      '\n  B' + store.state.textB8 + '\n} ' +
       '\n' + this.codeFooter
       return this.code
     }
